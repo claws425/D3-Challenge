@@ -51,7 +51,20 @@ var height = width - width / 4;
         (height - margin - tPadBot) +
         ")"
     );
-    
+
+// use xText to append Poverty to the SVG files
+
+    xText
+    .append("text")
+    .attr("y", -26)
+    .attr("data-name", "poverty")
+    .attr("data-axis", "x")
+    .attr("class", "aText active x")
+    .text("In Poverty (%)");
+
+
+
+
 
 
 
