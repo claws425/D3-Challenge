@@ -69,6 +69,12 @@ var leftTextY = (height + labelArea) / 2 - labelArea;
 // add the left axis label group
 svg.append("g").attr("class", "yText");
 
+// set variable to reduce coding
+var yText = d3.select(".yText");
+
+
+
+
 
 
 
