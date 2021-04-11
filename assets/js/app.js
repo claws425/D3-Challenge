@@ -132,6 +132,14 @@ d3.csv("assets/data/data.csv").then(function(data) {
       });
     }   
 
+    // instantiate the scatter plot
+    // first grab the min and max values of x and y
+    xMinMax();
+    yMinMax();
+
+    
+
+
   }
 
 
