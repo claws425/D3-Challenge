@@ -23,6 +23,19 @@ var height = width - width / 4;
   .attr("height", height)
   .attr("class", "chart");
 
+  // Set the radius for each dot using a function
+  var circRadius;
+  function crGet() {
+    if (width <= 530) {
+      circRadius = 5;
+    }
+    else{
+      circRadius = 10;
+    }
+  }
+  crGet();
+
+
 
 
 
