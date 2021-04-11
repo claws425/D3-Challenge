@@ -72,7 +72,7 @@ svg.append("g").attr("class", "yText");
 // set variable to reduce coding
 var yText = d3.select(".yText");
 
-// nest the group's transform attr in a function
+// give yText a transform property
       yText.attr(
         "transform",
         "translate(" + leftTextX + ", " + leftTextY + ")rotate(-90)"
@@ -180,16 +180,7 @@ d3.csv("assets/data/data.csv").then(function(data) {
       .attr("class", function(d) {
         return "stateCircle " + d.abbr;
       })
-
-
-
-
-
-
-
-
-  }
-
+    }
 
 
 
