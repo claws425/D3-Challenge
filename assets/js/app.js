@@ -62,6 +62,11 @@ var height = width - width / 4;
     .attr("class", "aText active x")
     .text("In Poverty (%)");
 
+// Specify the variables for the left axis
+var leftTextX = margin + tPadLeft;
+var leftTextY = (height + labelArea) / 2 - labelArea;
+
+
 
 
 
