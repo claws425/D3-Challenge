@@ -15,7 +15,16 @@ var height = width - width / 4;
  var tPadBot = 40;
  var tPadLeft = 40;
 
- 
+ // Create the canvas for the graph
+ var svg = d3
+  .select("#scatter")
+  .append("svg")
+  .attr("width", width)
+  .attr("height", height)
+  .attr("class", "chart");
+
+
+
 
 
 
