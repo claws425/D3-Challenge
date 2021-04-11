@@ -38,6 +38,10 @@ var height = width - width / 4;
   // Add the labels
   // create a group element to next the bottom axes labels
   svg.append("g").attr("class", "xText");
+
+  // select the group without extra coding
+  var xText = d3.select(".xText");
+
   
 
 
