@@ -78,6 +78,20 @@ var yText = d3.select(".yText");
         "translate(" + leftTextX + ", " + leftTextY + ")rotate(-90)"
       );
 
+  // use yText to append healthcare to the SVG files
+
+    yText
+    .append("text")
+    .attr("y", 26)
+    .attr("data-name", "healthcare")
+    .attr("data-axis", "y")
+    .attr("class", "aText active y")
+    .text("Lacks Healthcare (%)");
+
+
+
+
+
 
 
 
