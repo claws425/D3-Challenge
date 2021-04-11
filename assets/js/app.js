@@ -8,5 +8,10 @@ var height = width - width / 4;
 // Set margins all around
  var margin = 20;
 
+ // set space for placing the words
+ var labelArea = 110;
+
  
+
+
 
