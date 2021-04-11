@@ -147,7 +147,23 @@ d3.csv("assets/data/data.csv").then(function(data) {
       .domain([yuMin, yMax])
       // height is inversed due to how d3 calculates y-axis placement
       .range([height - margin - labelArea, margin]);
-      
+
+    // pass the scales in the axis methods to create the axes.
+    var xAxis = d3.axisBottom(xScale);
+    var yAxis = d3.axisLeft(yScale);
+
+    // append the axes in group elements
+    svg
+      .append("g")
+      .call(xAxis)
+      .attr("class", "xAxis")
+      .attr("transform", "translate(0," + (height - margin - labelArea) + ")");
+    svg
+      .append("g")
+      .call(yAxis)
+      .attr("class", "yAxis")
+      .attr("transform", "translate(" + (margin + labelArea) + ", 0)");
+
 
 
 
