@@ -94,6 +94,20 @@ d3.csv("assets/data/data.csv").then(function(data) {
     visualize(data);
 });
 
+// create visualization function
+  function visualize(theData) {
+    // designate the defaults with the same names as headings in csv
+    var curX = "poverty";
+    var curY = "healthcare";
+  
+    // save empty variables for min and max values of x and y
+    var xMin;
+    var xMax;
+    var yMin;
+    var yMax;
+
+  }
+
 
 
 
