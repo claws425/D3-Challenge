@@ -35,6 +35,12 @@ var height = width - width / 4;
   }
   crGet();
 
+  // Add the labels
+  // create a group element to next the bottom axes labels
+  svg.append("g").attr("class", "xText");
+  
+
+
 
 
 
