@@ -88,6 +88,13 @@ var yText = d3.select(".yText");
     .attr("class", "aText active y")
     .text("Lacks Healthcare (%)");
 
+//  import the .csv file with the d3's .csv import method
+d3.csv("assets/data/data.csv").then(function(data) {
+  // visualize the data
+    visualize(data);
+});
+
+
 
 
 
