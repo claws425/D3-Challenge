@@ -66,6 +66,9 @@ var height = width - width / 4;
 var leftTextX = margin + tPadLeft;
 var leftTextY = (height + labelArea) / 2 - labelArea;
 
+// add the left axis label group
+svg.append("g").attr("class", "yText");
+
 
 
 
