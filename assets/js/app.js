@@ -137,7 +137,18 @@ d3.csv("assets/data/data.csv").then(function(data) {
     xMinMax();
     yMinMax();
 
-    
+    // tell d3 to place the circles
+    var xScale = d3
+      .scaleLinear()
+      .domain([xMin, xMax])
+      .range([margin + labelArea, width - margin]);
+    var yScale = d3
+      .scaleLinear()
+      .domain([yuMin, yMax])
+      // height is inversed due to how d3 calculates y-axis placement
+      .range([height - margin - labelArea, margin]);
+      
+
 
 
   }
