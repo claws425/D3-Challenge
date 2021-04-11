@@ -11,7 +11,13 @@ var height = width - width / 4;
  // set space for placing the words
  var labelArea = 110;
 
+ // padding for the text on the axes
+ var tPadBot = 40;
+ var tPadLeft = 40;
+
  
+
+
 
 
 
