@@ -106,6 +106,19 @@ d3.csv("assets/data/data.csv").then(function(data) {
     var yMin;
     var yMax;
 
+    // change the min and max for x
+    function xMinMax() {
+      // min will grab the smallest number from the selected column
+      xMin = d3.min(theData, function(d) {
+        return parseFloat(d[curX]) * 0.90;
+      });
+
+      // max will grab the smallest number from the selected column
+      xMax = d3.max(theData, function(d) {
+        return parseFloat(d[curX]) * 1.10;
+      });
+    }
+    
   }
 
 
