@@ -42,7 +42,18 @@ var height = width - width / 4;
   // select the group without extra coding
   var xText = d3.select(".xText");
 
-  
+  // give xText a transform property to place it at the bottom of the chart
+    xText.attr(
+      "transform",
+      "translate(" +
+        ((width - labelArea) / 2 + labelArea) + 
+        ", " +
+        (height - margin - tPadBot) +
+        ")"
+    );
+    
+
+
 
 
 
