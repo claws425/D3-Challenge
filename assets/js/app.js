@@ -144,7 +144,7 @@ d3.csv("assets/data/data.csv").then(function(data) {
       .range([margin + labelArea, width - margin]);
     var yScale = d3
       .scaleLinear()
-      .domain([yuMin, yMax])
+      .domain([yMin, yMax])
       // height is inversed due to how d3 calculates y-axis placement
       .range([height - margin - labelArea, margin]);
 
@@ -166,7 +166,23 @@ d3.csv("assets/data/data.csv").then(function(data) {
 
       // a grouping for the dots and their labels
     var theCircles = svg.selectAll("g theCircles").data(theData).enter();
-    
+
+    // append the circles for each row of data
+    theCircles
+      .append("circle")
+      .attr("cx", function(d) {
+        return xScale(d[curX]);
+      })
+      .attr("cy", function(d) {
+        return yScale(d[curY]);
+      })
+      .attr("r", circRadius)
+      .attr("class", function(d) {
+        return "stateCircle " + d.abbr;
+      })
+
+
+
 
 
 
