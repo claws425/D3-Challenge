@@ -164,6 +164,11 @@ d3.csv("assets/data/data.csv").then(function(data) {
       .attr("class", "yAxis")
       .attr("transform", "translate(" + (margin + labelArea) + ", 0)");
 
+      // a grouping for the dots and their labels
+    var theCircles = svg.selectAll("g theCircles").data(theData).enter();
+    
+
+
 
 
 
