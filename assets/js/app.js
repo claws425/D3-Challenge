@@ -72,7 +72,11 @@ svg.append("g").attr("class", "yText");
 // set variable to reduce coding
 var yText = d3.select(".yText");
 
-
+// nest the group's transform attr in a function
+      yText.attr(
+        "transform",
+        "translate(" + leftTextX + ", " + leftTextY + ")rotate(-90)"
+      );
 
 
 
